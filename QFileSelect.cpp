@@ -24,6 +24,11 @@ QFileSelect::~QFileSelect()
 {
 }
 
+QString QFileSelect::getPath()
+{
+	return m_pPathBox->text();
+}
+
 void QFileSelect::OnBrowsePath()
 {
     if (m_pFileDialog->exec() && m_pFileDialog->result() == QDialog::Accepted)
