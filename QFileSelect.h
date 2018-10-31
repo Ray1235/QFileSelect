@@ -13,6 +13,8 @@ class QFileSelect : public QWidget
 public:
 	QFileSelect(QStringList fileFilter = QStringList(), QString label = "", QWidget *parent = NULL);
 	~QFileSelect();
+	
+	QString getPath();
 
 	QLabel *m_pPathLabel;
 	QHBoxLayout *m_pPathLayout;
